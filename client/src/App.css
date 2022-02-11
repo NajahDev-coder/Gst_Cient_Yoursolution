@@ -1,0 +1,671 @@
+.App {
+  text-align: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+h1
+{
+	font-size: 1.5rem;
+	color:#4c4444;
+	font-style:italic;
+	
+	padding-bottom:5px;
+	width:98%;
+    transition: all 0.4s;
+	margin:10px auto 0px auto;
+	
+}
+.ss_tit
+{
+	width: 7%;
+    display: flex;
+    background: #4c4444;
+    height: 5px;
+	margin-left: 10px;
+	margin-bottom:40px;
+}
+.LoginPage
+{
+	width:30%;
+	margin:150px auto;
+	
+}
+.LoginPage h1{
+	box-shadow: none;
+	margin:10px auto 10px auto;
+}
+.LoginPage input
+{
+	margin:10px auto;
+}
+.LoginPage button
+{
+	margin:20px auto;
+}
+.uploadClient h1
+{
+	width:70%;
+	text-align:center;
+	margin:60px auto 30px auto;
+}
+.navbar{
+  width:100%;
+  height:80px;
+  background-color: coral;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar .links{
+font-size: 25px;
+color: white;
+
+}
+.links a{
+margin: 10px;
+text-decoration: none;
+color: white;
+}
+
+.links a:hover{
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.uploadClient{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+      margin-top: 52px;
+    border-radius: 6px;
+    border-top: 5px solid #007bff;
+}
+
+.CreateClient {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh -80px);
+}
+
+.uploadClient input {
+ 
+  margin: 10px;
+  
+}
+
+.uploadClient textarea{
+  height: 120px;
+ 
+  margin-top: 10px;
+  width: 96%;
+    margin-left: 25px;
+}
+
+button{
+  margin: 10px;
+}
+
+.MainPage{
+  display: flex;
+  justify-content: center;
+  height: calc(100vh -80px);
+ 
+}
+
+.ClientContainer{
+  height: calc(100vh -80px);
+ 
+  padding:30px;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #f8f9fa;
+  border-radius:6px;
+  border-top: 5px solid #007bff;
+}
+
+.Client{
+ width:100%;
+ margin-top:20px;
+ display: flex;
+ flex-direction: column;
+ justify-content: flex-start;
+ padding-left: 10px;
+ border-bottom:1px solid #ffc107;
+    position: relative;
+}
+.fa-trash
+{
+	top: 0;
+    position: absolute;
+    right: 0;
+    font-size: 23px;
+	cursor:pointer;
+    color: #cc0000;
+}
+.fa-calendar-check
+{
+	top: 2px;
+    position: absolute;
+    right: 30px;
+    font-size: 21px;
+	cursor:pointer;
+    color: green;
+}
+.fa-calendar-times
+{
+	top: 2px;
+    position: absolute;
+    right: 30px;
+    font-size: 21px;
+	cursor:pointer;
+    color: #cc0000;
+}
+.fa-close
+{
+	top: 2px;
+    position: absolute;
+    right: 60px;
+    font-size: 21px;
+	
+    color: #cc0000;
+}
+.fa-check
+{
+	top: 2px;
+    position: absolute;
+    right: 60px;
+    font-size: 25px;
+	
+    color: green;
+}
+.fa-edit
+{
+	top: 0px;
+    position: absolute;
+    right: 60px;
+    font-size: 23px;
+	cursor:pointer;
+    color: gray;
+}
+.Client_detail
+{
+	width:45%;
+ margin-top:20px;
+
+min-height:300px;
+ padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 6px;
+  border-top: 5px solid #28a745;
+}
+.passage_detail
+{
+	width:45%;
+ margin-top:20px;
+
+min-height:300px;
+ padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 6px;
+  border-top: 5px solid #ffc107;
+}
+.about{
+ width:100%;
+ margin-top:20px;
+ display: flex;
+ flex-direction: column;
+ justify-content: flex-start;
+ padding-left: 10px;
+ border:1px solid lightslategrey;
+}
+
+
+.client-title{
+  text-transform: capitalize;
+  cursor: pointer;    
+  font-size: 18px;
+}
+
+.Client.individual{
+  background-color: rgb(170, 164, 162);
+  max-width: 60%;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.like_btn{
+  width:13%;
+  float: left;
+  margin-bottom: 10px;
+}
+.navbar
+{
+background-color: #e3f2fd;
+}
+navbar a i {
+    font-size: 45px;
+    color: #4790f4;
+    margin-right: 15px;
+    width: 25px;
+    text-align: center;
+    vertical-align: middle;
+    float: left;
+}
+.la-dashboard:before {
+    content: "\f1b2";
+}
+
+.vertical-nav {
+  min-width: 17rem;
+  width: 17rem;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s;
+}
+
+.page-content {
+  width: calc(100% - 17rem);
+  margin-left: 17rem;
+  transition: all 0.4s;
+}
+
+/* for toggle behavior */
+
+.nav-item a:hover{
+background-color: #d7e2ed!important;
+}
+.active {
+background-color: #f8f9fa!important;
+}
+
+
+#content.active {
+  width: 100%;
+  margin: 0;
+}
+
+
+/*
+*
+* ==========================================
+* FOR DEMO PURPOSE
+* ==========================================
+*
+*/
+
+body {
+  /*background: #599fd9;
+  background: -webkit-linear-gradient(to right, #599fd9, #c2e59c);
+  background: linear-gradient(to right, #599fd9, #c2e59c);*/
+  min-height: 100vh;
+  overflow-x: hidden;
+      background: #fdfdfd;
+}
+
+.separator {
+  margin: 3rem 0;
+  border-bottom: 1px dashed #fff;
+}
+
+.text-uppercase {
+  letter-spacing: 0.1em;
+}
+.row
+{
+	display:flex;justify-content: space-between;
+	margin:40px auto;
+}
+.uploadClient .row
+{
+	margin:auto;
+	width:80%;
+}
+.thead-blue th
+{
+	background-color: #007bff !important;
+    border-bottom: 2px solid #ffffff !important;
+	color:#fff;
+}
+.text-gray {
+  color: #aaa;
+}
+.table th
+{
+	border-top:none;
+	
+}
+.clt_tab
+{
+	display:flex;
+}
+td.tit
+{
+font-weight: 500;
+    font-style: italic;
+    color: #7c7b7b;
+	}
+	td
+{
+text-align: justify;
+    font-style: italic;
+    color: #7c7b7b;
+	}
+.rbc-event
+{
+	height:auto!important;
+	
+}
+.rbc-time-view
+{
+	border-radius:6px;
+	background:white;
+}
+.rbc-time-view .rbc-row
+{
+	min-height:32px !important;
+}
+.rbc-row-bg,.rbc-row-content
+{
+	display:none !important;
+	height:auto  !important;
+}
+
+.rbc-toolbar-label
+{
+	font-weight:bold;    
+	padding: 5px !important;
+ 
+    color: #007bff;
+	border-radius:6px;
+}
+.col_stats
+{
+	margin: 5px 10px;
+    padding: 20px 10px 0px 10px;
+    border-radius: 10px;
+    background: #fff;
+    width: 30%;
+}
+.col_stats .fa
+{
+	    float: left;
+    line-height: 55px;
+    font-size: 50px;
+    color: #ededed;
+	margin-right: 50px;
+}
+.MainPage .react-datepicker-wrapper {
+  display: inline-block;
+  padding: 0;
+  border: 0;
+ width: 22% !important;
+    /* float: right; */
+    position: absolute !important;
+    right: -6px !important;
+}
+.MainPage .react-datepicker__input-container input
+{
+	border:1px solid #ccc !important;
+	border-radius:9px !important;
+	width: 93% !important;
+	background: transparent !important;
+}
+.MainPage .react-datepicker__close-icon
+{
+	right: 6px !important;
+	top: -11px !important;
+}
+.MainPage .react-datepicker__close-icon::after {
+  height:auto !important;
+  width:auto !important;
+  padding: 0 5px 5px 5px !important;
+    font-size: 23px !important;
+	background-color: #ff384b !important;
+}
+.MainPage .react-datepicker-popper[data-placement^=top] .react-datepicker__triangle::before, .MainPage .react-datepicker-popper[data-placement^=bottom] .react-datepicker__triangle::before, .MainPage .react-datepicker-popper[data-placement^=top] .react-datepicker__triangle::after, .MainPage .react-datepicker-popper[data-placement^=bottom] .react-datepicker__triangle::after 
+	{
+		left:-15px !important;
+	}
+#search-button
+{
+	margin-top: auto;
+    margin-left: -3px;
+    z-index: 11;
+    width: 60px;
+}
+.relative
+{
+	position:relative;
+}
+#search-button2
+{
+	position:absolute;
+	right:0px;
+	top:-10px;
+    z-index: 11;
+    width: 60px;
+}
+#search-button3
+{
+	right: 5px;
+    position: absolute;
+    top: -3px;
+}
+.rbc-day-slot .rbc-event, .rbc-day-slot .rbc-background-event
+{
+	width:100% !important;
+	z-index:5 !important;
+	font-size: 14px !important;
+	border: 1px solid #d9dee3 !important;
+}
+h1 span.text-sm
+{
+	font-size:15px;
+}
+.rbc-event, .rbc-day-slot .rbc-background-event
+{
+	background-color: #28a745 !important;
+}
+.History .rbc-event, .History .rbc-day-slot .rbc-background-event
+{
+	background-color: red !important;
+}
+.fa-cal_icone
+{
+	position:absolute;
+	right: 5px;
+    top: 12px;
+    font-size: 25px;
+    color: #e1e1e1;
+	cursor:pointer;
+}
+.cal_icone
+{
+	position: absolute !important;
+    right: 16px;
+    top: 0px;
+	width: 92%;
+}
+.cal_icone input,.cal_icone input:focus
+{
+	background:transparent !important;
+	border:none !important;
+	text-indent:-9999999999px !important;
+	transition:none !important;
+	 outline: none !important;
+	 height: 27px;
+}
+.navbar
+{
+	display:none;
+}
+.collapse:not(.show) {
+    display: block;
+}
+@media (max-width: 768px)
+ {
+	 .collapse:not(.show) {
+    display: none;
+}
+	.navbar
+	{
+	display:block;
+	}
+  .navbar 
+	{
+    position: fixed;
+    z-index: 5;
+	}
+  .vertical-nav {
+    margin-left: -17rem;
+  }
+   .vertical-nav  .navbar 
+   {
+    position: relative;
+    z-index: 0;
+   }
+  .show {
+    margin-left: 0rem;
+  }
+  #sidebar.active {
+    margin-left: 0;
+  }
+  .vertical-nav
+  {
+	  z-index:20;
+  }
+  #content {
+    width: 100%;
+    margin: 0;
+  }
+  #content.active {
+    /*margin-left: 17rem;*/
+    /*width: calc(100% - 17rem);*/
+  }
+  .LoginPage
+  {
+	  width:80%;
+  }
+  .page-content
+  {
+	      width: 100%;
+		  padding:0;
+		  margin-left: 0;
+  }
+  .uploadClient
+  {
+	      width: 100%;
+  }
+  .uploadClient .row
+  {
+	      width: 100%;
+  }
+  .fa-trash
+{
+    font-size: 15px;
+}
+.fa-calendar-times,.fa-calendar-check
+{
+    font-size: 15px;
+	top: 0px;
+    right: 18px;
+}
+.fa-unlock-alt
+{
+    font-size: 15px;
+	top: 0px;
+    right: 18px;
+}
+.fa-close
+{
+    font-size: 17px;
+	top: -2px;
+	right: 38px;
+}
+.fa-check
+{
+    font-size: 15px;
+		top: 0px;
+    right: 38px;
+}
+.fa-edit
+{
+    font-size: 15px;
+	top: 0px;
+	right: 38px;
+}
+.col_stats
+{
+	    width: 95%;
+}
+.navbar
+{
+	justify-content: left;
+}
+#search-button
+{
+	width:40px;
+	margin-top: -38px;
+	margin-left:auto;
+	margin-left:90%;
+}
+.page-content
+{
+	padding:0rem !important;
+}
+#sidebar .navbar
+{
+	justify-content: right !important;
+}
+.navbar-toggler-right
+{
+	float:right !important;
+}
+#sidebar .py-4
+{
+	padding-top:0  !important;
+}
+.MainPage .react-datepicker-wrapper
+{
+	width:98% !important;
+}
+.Client_detail, .passage_detail
+{
+	width:100% !important;
+	font-size: 0.9rem;
+}
+.rbc-day-slot .rbc-events-container
+{
+	min-width:98px !important;
+	font-size: 0.8rem !important;
+}
+.rbc-day-slot .rbc-event, .rbc-day-slot .rbc-background-event
+{
+	font-size: 0.8rem !important;
+}
+.client-title
+{
+	font-size: 16px;
+}
+.h5, h5 {
+    font-size: 1.15rem;
+}
+.ss_tit
+{
+    margin-left: 3px;
+}
+}
